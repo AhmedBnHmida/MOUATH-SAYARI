@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بلدية مدنين - روابط مفيدة</title>
+    <meta name="description" content="روابط مفيدة لبلدية مدنين - مواقع حكومية، خدمات إلكترونية، وموارد مهمة">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .links-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-right: 5px solid var(--primary-yellow);
+            transition: all 0.3s ease;
+        }
+        .links-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+        .links-card h3 {
+            color: var(--primary-yellow);
+            margin: 0 0 15px 0;
+            font-size: 18px;
+        }
+        .links-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .links-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .links-card li:last-child {
+            border-bottom: none;
+        }
+        .links-card a {
+            color: var(--primary-black);
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+        .links-card a:hover {
+            color: var(--primary-yellow);
+            gap: 15px;
+        }
+        .links-card a::before {
+            content: '→';
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .links-card a:hover::before {
+            opacity: 1;
+        }
+        .link-icon {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        .featured {
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(26, 26, 26, 0.02) 100%);
+            border: 2px solid var(--primary-yellow);
+            position: relative;
+        }
+        .featured::before {
+            content: '★';
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: var(--primary-yellow);
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    
+    <main>
+        <section class="section">
+            <h1><span class="ar">روابط مفيدة</span><span class="fr">Liens Utiles</span></h1>
+            <p><span class="ar">تجد هنا مجموعة من الروابط المهمة والمفيدة للخدمات الحكومية والإلكترونية والموارد الإدارية</span><span class="fr">Découvrez une collection de liens importants vers les services gouvernementaux et les ressources administratives</span></p>
+
+            <!-- Government Websites -->
+            <section id="government">
+                <h2><span class="ar">المواقع الحكومية الرسمية</span><span class="fr">Sites Web Gouvernementaux Officiels</span></h2>
+                <div class="links-grid">
+                    <div class="links-card featured">
+                        <h3><span class="ar">المؤسسات الوطنية</span><span class="fr">Institutions Nationales</span></h3>
+                        <ul>
+                            <li><a href="https://www.tunisia.tn" target="_blank"><span class="link-icon">🌐</span><span class="ar">البوابة الرسمية لتونس</span><span class="fr">Portail Officiel de la Tunisie</span></a></li>
+                            <li><a href="https://www.interieur.gov.tn" target="_blank"><span class="link-icon">🏛️</span><span class="ar">وزارة الداخلية</span><span class="fr">Ministère de l'Intérieur</span></a></li>
+                            <li><a href="https://www.collectiviteslocales.gov.tn" target="_blank"><span class="link-icon">📍</span><span class="ar">وزارة الجماعات المحلية</span><span class="fr">Ministère des Collectivités Locales</span></a></li>
+                            <li><a href="https://www.finances.gov.tn" target="_blank"><span class="link-icon">💰</span><span class="ar">وزارة المالية</span><span class="fr">Ministère des Finances</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="links-card">
+                        <h3><span class="ar">الخدمات الإلكترونية</span><span class="fr">Services Électroniques</span></h3>
+                        <ul>
+                            <li><a href="https://www.e-services.tn" target="_blank"><span class="link-icon">💻</span><span class="ar">البوابة الإلكترونية الحكومية</span><span class="fr">Portail de Services Électroniques</span></a></li>
+                            <li><a href="https://www.egate.tn" target="_blank"><span class="link-icon">🔐</span><span class="ar">بوابة الخدمات الحكومية</span><span class="fr">Portail e-Government</span></a></li>
+                            <li><a href="https://www.smartcitizen.tn" target="_blank"><span class="link-icon">📱</span><span class="ar">التطبيقات الذكية</span><span class="fr">Applications Intelligentes</span></a></li>
+                            <li><a href="https://www.tunisian-eaccount.tn" target="_blank"><span class="link-icon">👤</span><span class="ar">الحساب الموحد التونسي</span><span class="fr">Compte Unifié Tunisien</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="links-card">
+                        <h3><span class="ar">المجالس والهيئات</span><span class="fr">Conseils et Autorités</span></h3>
+                        <ul>
+                            <li><a href="https://www.cndp.tn" target="_blank"><span class="link-icon">⚖️</span><span class="ar">هيئة مكافحة الفساد</span><span class="fr">Instance de Lutte contre la Corruption</span></a></li>
+                            <li><a href="https://www.itaat.tn" target="_blank"><span class="link-icon">📊</span><span class="ar">المعهد الوطني للإحصاء</span><span class="fr">Institut National de la Statistique</span></a></li>
+                            <li><a href="https://www.inlucc.tn" target="_blank"><span class="link-icon">📋</span><span class="ar">هيئة الانتخابات</span><span class="fr">Instance Électorale</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Regional & Local Resources -->
+            <section id="regional">
+                <h2><span class="ar">الموارد الإقليمية والمحلية</span><span class="fr">Ressources Régionales et Locales</span></h2>
+                <div class="links-grid">
+                    <div class="links-card">
+                        <h3><span class="ar">محافظة مدنين</span><span class="fr">Gouvernorat de Médenine</span></h3>
+                        <ul>
+                            <li><a href="#" target="_blank"><span class="link-icon">🏢</span><span class="ar">ولاية مدنين الرسمية</span><span class="fr">Gouvernorat de Médenine Officiel</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">📞</span><span class="ar">الخدمات الولائية</span><span class="fr">Services du Gouvernorat</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">📄</span><span class="ar">القرارات والمحاضر</span><span class="fr">Décisions et Procès-verbaux</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="links-card">
+                        <h3><span class="ar">البلديات المجاورة</span><span class="fr">Municipalités Voisines</span></h3>
+                        <ul>
+                            <li><a href="#" target="_blank"><span class="link-icon">🗺️</span><span class="ar">بلدية زارس</span><span class="fr">Municipalité de Zarzis</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">🗺️</span><span class="ar">بلدية بن قردان</span><span class="fr">Municipalité de Ben Guerdane</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">🗺️</span><span class="ar">بلدية جرجيس</span><span class="fr">Municipalité de Djerba</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="links-card">
+                        <h3><span class="ar">الخدمات الاجتماعية</span><span class="fr">Services Sociaux</span></h3>
+                        <ul>
+                            <li><a href="#" target="_blank"><span class="link-icon">❤️</span><span class="ar">الصحة والحماية الاجتماعية</span><span class="fr">Santé et Protection Sociale</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">🎓</span><span class="ar">التعليم والتكوين</span><span class="fr">Éducation et Formation</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">🚗</span><span class="ar">النقل والمواصلات</span><span class="fr">Transport et Communication</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Economic & Commercial -->
+            <section id="economic">
+                <h2><span class="ar">الموارد الاقتصادية والتجارية</span><span class="fr">Ressources Économiques et Commerciales</span></h2>
+                <div class="links-grid">
+                    <div class="links-card">
+                        <h3><span class="ar">الجهات الاقتصادية</span><span class="fr">Organismes Économiques</span></h3>
+                        <ul>
+                            <li><a href="https://www.cnc.tn" target="_blank"><span class="link-icon">🏪</span><span class="ar">الغرفة الوطنية للتجار</span><span class="fr">Chambre Nationale de Commerce</span></a></li>
+                            <li><a href="https://www.cnip.tn" target="_blank"><span class="link-icon">🏭</span><span class="ar">الغرفة الوطنية للصناعات</span><span class="fr">Chambre Nationale d'Industrie</span></a></li>
+                            <li><a href="https://www.onas.tn" target="_blank"><span class="link-icon">💼</span><span class="ar">الهيئة الوطنية للشغل</span><span class="fr">Agence Nationale de l'Emploi</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="links-card">
+                        <h3><span class="ar">السياحة والثقافة</span><span class="fr">Tourisme et Culture</span></h3>
+                        <ul>
+                            <li><a href="https://www.tunisiatourism.tn" target="_blank"><span class="link-icon">✈️</span><span class="ar">المكتب الوطني للسياحة</span><span class="fr">Office National du Tourisme</span></a></li>
+                            <li><a href="https://www.ins.tn" target="_blank"><span class="link-icon">🎭</span><span class="ar">المعهد الوطني للتراث</span><span class="fr">Institut National du Patrimoine</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">🏖️</span><span class="ar">مناطق سياحية محلية</span><span class="fr">Sites Touristiques Locaux</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="links-card">
+                        <h3><span class="ar">التنمية والاستثمار</span><span class="fr">Développement et Investissement</span></h3>
+                        <ul>
+                            <li><a href="https://www.fipa.tn" target="_blank"><span class="link-icon">📈</span><span class="ar">هيئة الاستثمار</span><span class="fr">Agence d'Investissement</span></a></li>
+                            <li><a href="https://www.ifc.org" target="_blank"><span class="link-icon">🌍</span><span class="ar">التمويل الدولي</span><span class="fr">Financement International</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">💡</span><span class="ar">البرامج التنموية</span><span class="fr">Programmes de Développement</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Legal & Regulatory -->
+            <section id="legal">
+                <h2><span class="ar">الموارد القانونية والتنظيمية</span><span class="fr">Ressources Légales et Réglementaires</span></h2>
+                <div class="links-grid">
+                    <div class="links-card featured">
+                        <h3><span class="ar">قواعد القانون والتشريع</span><span class="fr">Bases Juridiques</span></h3>
+                        <ul>
+                            <li><a href="https://www.ilo.org" target="_blank"><span class="link-icon">⚖️</span><span class="ar">منظمة العمل الدولية</span><span class="fr">Organisation Internationale du Travail</span></a></li>
+                            <li><a href="https://www.un.org" target="_blank"><span class="link-icon">🇺🇳</span><span class="ar">الأمم المتحدة</span><span class="fr">Organisation des Nations Unies</span></a></li>
+                            <li><a href="https://www.hrw.org" target="_blank"><span class="link-icon">✊</span><span class="ar">حقوق الإنسان</span><span class="fr">Droits de l'Homme</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="links-card">
+                        <h3><span class="ar">المحاكم والقضاء</span><span class="fr">Tribunaux et Justice</span></h3>
+                        <ul>
+                            <li><a href="#" target="_blank"><span class="link-icon">⚖️</span><span class="ar">المحكمة الإدارية</span><span class="fr">Tribunal Administratif</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">🏛️</span><span class="ar">محكمة الاستئناف</span><span class="fr">Cour d'Appel</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">📋</span><span class="ar">خدمات قضائية</span><span class="fr">Services Judiciaires</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Helpful Resources -->
+            <section id="resources">
+                <h2><span class="ar">موارد مساعدة إضافية</span><span class="fr">Ressources d'Aide Supplémentaires</span></h2>
+                <div class="links-grid">
+                    <div class="links-card">
+                        <h3><span class="ar">الاستشارات والدعم</span><span class="fr">Consultations et Support</span></h3>
+                        <ul>
+                            <li><a href="#" target="_blank"><span class="link-icon">💬</span><span class="ar">خط استشارة مجاني</span><span class="fr">Ligne Conseil Gratuite</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">📧</span><span class="ar">البريد الإلكتروني للدعم</span><span class="fr">Support par Email</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">📱</span><span class="ar">التطبيق المحمول</span><span class="fr">Application Mobile</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="links-card">
+                        <h3><span class="ar">المعلومات والتثقيف</span><span class="fr">Information et Éducation</span></h3>
+                        <ul>
+                            <li><a href="#" target="_blank"><span class="link-icon">📚</span><span class="ar">المكتبة الرقمية</span><span class="fr">Bibliothèque Numérique</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">🎥</span><span class="ar">الفيديوهات التعليمية</span><span class="fr">Vidéos Éducatives</span></a></li>
+                            <li><a href="#" target="_blank"><span class="link-icon">📖</span><span class="ar">الأدلة والمراجع</span><span class="fr">Guides et Manuels</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

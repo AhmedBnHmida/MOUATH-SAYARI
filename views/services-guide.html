@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بلدية مدنين - دليل الخدمات</title>
+    <meta name="description" content="دليل خدمات بلدية مدنين - الخدمات الإدارية والحالة المدنية والخدمات الاقتصادية">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .service-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--primary-yellow);
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+        .service-card h3 {
+            color: var(--primary-yellow);
+            margin: 0 0 15px 0;
+            font-size: 18px;
+        }
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .service-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #555;
+        }
+        .service-card li:last-child {
+            border-bottom: none;
+        }
+        .service-fee {
+            background: rgba(255, 193, 7, 0.05);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: var(--primary-black);
+            font-weight: 500;
+        }
+        .procedure {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid var(--primary-yellow);
+        }
+        .procedure h4 {
+            color: var(--primary-yellow);
+            margin: 0 0 10px 0;
+        }
+        .procedure ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .procedure li {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    
+    <main>
+        <section class="section">
+            <h1><span class="ar">دليل الخدمات البلدية</span><span class="fr">Guide des Services Municipaux</span></h1>
+            <p><span class="ar">خدمات بلدية مدنين موضوعة تحت تصرفكم لتيسير احتياجاتكم الإدارية والحياتية</span><span class="fr">Les services municipaux de Médenine sont à votre disposition pour faciliter vos démarches administratives</span></p>
+
+            <!-- Urban Administrative Services -->
+            <section id="urban">
+                <h2><span class="ar">الخدمات الإدارية العمرانية</span><span class="fr">Services Administratifs Urbains</span></h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3><span class="ar">رخص البناء والعمارة</span><span class="fr">Permis de Construire</span></h3>
+                        <ul>
+                            <li><span class="ar">الحصول على رخصة البناء</span><span class="fr">Obtenir un permis de construire</span></li>
+                            <li><span class="ar">تصريح عدم الاعتراض</span><span class="fr">Certificat de non-opposition</span></li>
+                            <li><span class="ar">التقسيم العقاري</span><span class="fr">Division foncière</span></li>
+                            <li><span class="ar">رخصة الهدم والتعديل</span><span class="fr">Permis de démolition</span></li>
+                        </ul>
+                        <div class="service-fee"><span class="ar">الرسم:</span><span class="fr">Frais:</span> <span class="ar">يتم احتسابها حسب طبيعة المشروع</span></div>
+                    </div>
+                    <div class="service-card">
+                        <h3><span class="ar">خدمات التنقل والعنوانين</span><span class="fr">Services de Mobilité</span></h3>
+                        <ul>
+                            <li><span class="ar">استخراج شهادة عنوان</span><span class="fr">Certificat d'adresse</span></li>
+                            <li><span class="ar">تحديث السجلات العقارية</span><span class="fr">Mise à jour des registres</span></li>
+                            <li><span class="ar">خريطة الملكيات</span><span class="fr">Carte des propriétés</span></li>
+                            <li><span class="ar">معلومات الأملاك البلدية</span><span class="fr">Informations sur les biens municipaux</span></li>
+                        </ul>
+                        <div class="service-fee"><span class="ar">الرسم:</span><span class="fr">Frais:</span> 10 <span class="ar">دينار</span></div>
+                    </div>
+                    <div class="service-card">
+                        <h3><span class="ar">البيئة والنظافة</span><span class="fr">Environnement et Hygiène</span></h3>
+                        <ul>
+                            <li><span class="ar">رخصة استغلال المحاجر</span><span class="fr">Licence d'exploitation</span></li>
+                            <li><span class="ar">مراقبة الملوثات</span><span class="fr">Suivi de la pollution</span></li>
+                            <li><span class="ar">التصاريح البيئية</span><span class="fr">Permis environnementaux</span></li>
+                            <li><span class="ar">إدارة النفايات</span><span class="fr">Gestion des déchets</span></li>
+                        </ul>
+                        <div class="service-fee"><span class="ar">الرسم:</span><span class="fr">Frais:</span> <span class="ar">متغير حسب النشاط</span></div>
+                    </div>
+                </div>
+
+                <div class="procedure">
+                    <h4><span class="ar">إجراءات الحصول على رخصة بناء</span><span class="fr">Procédure pour Permis de Construire</span></h4>
+                    <ol>
+                        <li><span class="ar">تقديم طلب كتابي مع المستندات المطلوبة</span><span class="fr">Soumettre une demande écrite</span></li>
+                        <li><span class="ar">دفع الرسوم الإدارية</span><span class="fr">Payer les frais administratifs</span></li>
+                        <li><span class="ar">عرض المشروع على اللجنة المختصة</span><span class="fr">Présentation à la commission compétente</span></li>
+                        <li><span class="ar">الحصول على الموافقة والرخصة</span><span class="fr">Obtenir l'approbation et le permis</span></li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Civil Status Services -->
+            <section id="civil">
+                <h2><span class="ar">خدمات الحالة المدنية</span><span class="fr">Services de l'État Civil</span></h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3><span class="ar">شهادات الميلاد</span><span class="fr">Certificats de Naissance</span></h3>
+                        <ul>
+                            <li><span class="ar">استخراج شهادة ميلاد</span><span class="fr">Obtenir un certificat de naissance</span></li>
+                            <li><span class="ar">نسخة من شهادة الميلاد</span><span class="fr">Copie du certificat</span></li>
+                            <li><span class="ar">تصحيح البيانات</span><span class="fr">Correction de données</span></li>
+                        </ul>
+                        <div class="service-fee"><span class="ar">الرسم:</span><span class="fr">Frais:</span> 5 <span class="ar">دنانير</span></div>
+                    </div>
+                    <div class="service-card">
+                        <h3><span class="ar">شهادات الزواج</span><span class="fr">Certificats de Mariage</span></h3>
+                        <ul>
+                            <li><span class="ar">استخراج عقد زواج</span><span class="fr">Obtenir un certificat de mariage</span></li>
+                            <li><span class="ar">نسخ من عقود الزواج</span><span class="fr">Copies de certificats</span></li>
+                            <li><span class="ar">شهادة عدم الزواج</span><span class="fr">Certificat de célibat</span></li>
+                        </ul>
+                        <div class="service-fee"><span class="ar">الرسم:</span><span class="fr">Frais:</span> 5 <span class="ar">دنانير</span></div>
+                    </div>
+                    <div class="service-card">
+                        <h3><span class="ar">شهادات الوفيات</span><span class="fr">Certificats de Décès</span></h3>
+                        <ul>
+                            <li><span class="ar">استخراج شهادة وفاة</span><span class="fr">Obtenir un certificat de décès</span></li>
+                            <li><span class="ar">نسخ من شهادات الوفاة</span><span class="fr">Copies de certificats</span></li>
+                            <li><span class="ar">إجراءات دفن الموتى</span><span class="fr">Procédures d'inhumation</span></li>
+                        </ul>
+                        <div class="service-fee"><span class="ar">الرسم:</span><span class="fr">Frais:</span> <span class="ar">مجاني</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Administrative Services -->
+            <section id="admin">
+                <h2><span class="ar">الخدمات الإدارية</span><span class="fr">Services Administratifs</span></h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3><span class="ar">الوثائق والشهادات</span><span class="fr">Documents et Certificats</span></h3>
+                        <ul>
+                            <li><span class="ar">شهادة تسمية للضرائب</span><span class="fr">Certificat de notation fiscale</span></li>
+                            <li><span class="ar">شهادة عدم الإفلاس</span><span class="fr">Certificat de solvabilité</span></li>
+                            <li><span class="ar">شهادة السكن</span><span class="fr">Certificat de résidence</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3><span class="ar">التراخيص والتصاريح</span><span class="fr">Licences et Autorisations</span></h3>
+                        <ul>
+                            <li><span class="ar">تراخيص التنظيف والنظافة</span><span class="fr">Permis d'hygiène</span></li>
+                            <li><span class="ar">تراخيص النشاطات الحرفية</span><span class="fr">Licences d'artisanat</span></li>
+                            <li><span class="ar">تصاريح الأحداث العامة</span><span class="fr">Autorisations d'événements</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Economic Services -->
+            <section id="eco">
+                <h2><span class="ar">خدمات الشؤون الاقتصادية</span><span class="fr">Services Économiques</span></h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3><span class="ar">الأنشطة التجارية</span><span class="fr">Activités Commerciales</span></h3>
+                        <ul>
+                            <li><span class="ar">تسجيل النشاطات التجارية</span><span class="fr">Enregistrement commercial</span></li>
+                            <li><span class="ar">تجديد التراخيص التجارية</span><span class="fr">Renouvellement des licences</span></li>
+                            <li><span class="ar">إغلاق المحلات التجارية</span><span class="fr">Fermeture des commerces</span></li>
+                        </ul>
+                        <div class="service-fee"><span class="ar">الرسم:</span><span class="fr">Frais:</span> <span class="ar">يتم تحديده حسب نوع النشاط</span></div>
+                    </div>
+                    <div class="service-card">
+                        <h3><span class="ar">التنمية الاقتصادية</span><span class="fr">Développement Économique</span></h3>
+                        <ul>
+                            <li><span class="ar">دعم المشاريع الصغيرة</span><span class="fr">Soutien aux petites entreprises</span></li>
+                            <li><span class="ar">تسهيلات الاستثمار</span><span class="fr">Facilités d'investissement</span></li>
+                            <li><span class="ar">معلومات العمل والتوظيف</span><span class="fr">Informations sur l'emploi</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tax Services -->
+            <section id="tax">
+                <h2><span class="ar">خدمات الأداءات والضرائب</span><span class="fr">Services des Impôts</span></h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3><span class="ar">الرسوم والأداءات</span><span class="fr">Frais et Taxes</span></h3>
+                        <ul>
+                            <li><span class="ar">دفع الضرائب العقارية</span><span class="fr">Paiement des impôts immobiliers</span></li>
+                            <li><span class="ar">رسوم الإضاءة والتنظيف</span><span class="fr">Frais d'éclairage et de nettoyage</span></li>
+                            <li><span class="ar">استعلام عن الديون الضريبية</span><span class="fr">Interrogation des dettes fiscales</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3><span class="ar">التسهيلات الضريبية</span><span class="fr">Facilités Fiscales</span></h3>
+                        <ul>
+                            <li><span class="ar">الإعفاءات الضريبية</span><span class="fr">Exonérations fiscales</span></li>
+                            <li><span class="ar">خطط الدفع المتيسرة</span><span class="fr">Plans de paiement</span></li>
+                            <li><span class="ar">المراجعة والاستئناف</span><span class="fr">Révision et appel</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Commercial Activities -->
+            <section id="trade">
+                <h2><span class="ar">الأنشطة التجارية والحرفية</span><span class="fr">Activités Commerciales et Artisanales</span></h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3><span class="ar">الحرف والصناعات</span><span class="fr">Métiers et Industries</span></h3>
+                        <ul>
+                            <li><span class="ar">رخص الحرف المختلفة</span><span class="fr">Licences d'artisanat</span></li>
+                            <li><span class="ar">معايير جودة الإنتاج</span><span class="fr">Normes de qualité</span></li>
+                            <li><span class="ar">برامج التدريب المهني</span><span class="fr">Programmes de formation</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3><span class="ar">السوق والموارد</span><span class="fr">Marché et Ressources</span></h3>
+                        <ul>
+                            <li><span class="ar">حجوزات أماكن السوق</span><span class="fr">Réservation d'espaces du marché</span></li>
+                            <li><span class="ar">الرسوم المحاسبية</span><span class="fr">Frais comptables</span></li>
+                            <li><span class="ar">دعم المشاريع الناشئة</span><span class="fr">Soutien aux start-ups</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
